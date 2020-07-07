@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #e9e9e9;
+}
+
+.box{
+    background-color: #fff;
+    border: 2px #bbb solid;
+    border-radius: 5px;
+}
+
+header{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    background-color: aquamarine;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+header .imgProfile{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header .textProfile{
+    width: max-content;
+    height: max-content;
+    background-color: red;
+    margin-left: 50px;
+    box-sizing: border-box;
+}
+
+header .textProfile .nameProfile{
+    font-size: 80px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header .textProfile .descProfile{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.content{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    background-color: yellow;
+}
+
+.formacao{
+    width: 100%;
+    height: max-content;
+}
+
+.title{
+    font-size: 36px;
+    padding: 10px;
+}
+
+.itemFormacao{
+    display: flex;
+    padding: 15px;
+}
+
+.imgItemFormacao{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.nameCurso{
+    font-size: 24px;
+}
+
+.tempoCurso{
+    font-size: 16px;
+}
+
+.experiencia{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.info{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.redes{
+    margin-top: 30px;
+    width: 100%; 
+}
+.itemRedes{
+    margin-top: 5px;
+    height: 50px;
+    background-color: #ddd;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.itemRedes:hover{
+    background-color: #aaa;
+}
+
+.square{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.dio{
+    margin-top: 7px;
+    margin-left: 1px;
+    font-size: 12px;
+    color: white;
+}
+
+.user{
+    font-family: 'Ubuntu', sans-serif;
+    color: #222;
+    margin-left: 10px;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.competencias{
+    margin-top: 30px;
+    width: 100%;
+}
+.hard, .soft{
+    display: flex;
+    align-items: center;
+}
+
+.skill{
+    margin-bottom: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 24px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.skills{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
