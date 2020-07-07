@@ -6,6 +6,7 @@
 body{
     box-sizing: border-box;
     background-color: #e9e9e9;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .box{
@@ -19,35 +20,35 @@ header{
     margin-left: auto;
     margin-right: auto;
     height: max-content;
-    background-color: aquamarine;
     padding: 50px;
     box-sizing: border-box;
     display: flex;
 }
 
-header .imgProfile{
-    width: 250px;
-    height: 250px;
+.imgProfile{
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
 
-header .textProfile{
+.textProfile{
     width: max-content;
     height: max-content;
-    background-color: red;
+    background-color: transparent;
     margin-left: 50px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
-header .textProfile .nameProfile{
-    font-size: 80px;
+.nameProfile{
+    font-size: 70px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-header .textProfile .descProfile{
+.descProfile{
     padding-top: 20px;
-    text-align: justify;
 }
 
 .content{
@@ -55,7 +56,7 @@ header .textProfile .descProfile{
     margin-left: auto;
     margin-right: auto;
     height: max-content;
-    background-color: yellow;
+    background-color: white;
 }
 
 .formacao{
@@ -156,7 +157,7 @@ header .textProfile .descProfile{
 .skill{
     margin-bottom: 10px;
     width: 150px;
-    height: 30px;
+    height: max-content;
     font-size: 24px;
     padding: 5px;
     border: 1px solid black;
@@ -168,4 +169,154 @@ header .textProfile .descProfile{
     font-size: 20px;
     margin-left: 10px;
     margin-bottom: 10px;
+}
+
+.certificados{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.itemCertificado{
+    width: 100%;
+    height: max-content;
+    background-color: #ddd;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.down{
+    color: #000;
+    width: 30px;
+    height: 30px;
+}
+
+.down:hover{
+    color: #333;
+}
+
+.mensagem{
+    margin-top: 30px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input{
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+textarea{
+    height: 100px;
+    resize: none;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.send{
+    margin-bottom: 0;
+    margin-top: 20px;
+    height: 40px;
+    color: white;
+    background-color: #333;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: max-content;
+    bottom: 0;
+    background-color: #aaa;
+    border-top: 2px black solid;
+}
+
+.footerContent{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contato{
+    background-color: #272323;
+    height: 40px;
+    border-radius: 5px;
+    width: 300px;
+    padding: 0 5px 0 5px;
+    color: #e0e0e0;
+    border: none;
+    outline: none;
+}
+
+.copy{
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    margin-left: -40px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: copy;
+    box-sizing: border-box;
+    padding-bottom: 5px;
+}
+
+.copyIcon{
+    width: 20px;
+    height: 20px;
+    color: #fff;
+}
+
+.itemContato{
+    display: flex;
+    align-items: initial;
+}
+
+@media (max-width: 500px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .imgProfile{
+        width: 100%;
+        height: 100%;
+    }
+
+    .textProfile{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .nameProfile{
+        font-size: 32px;
+    }
+
+    .descProfile{
+        width: 250px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        text-align: justify;
+    }
 }
